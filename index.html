@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/dfea39764a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars icon" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Java Full Stack Developer</p>
+          <h1>Hi, I'm <span>Mohan</span> <br>
+            From Chennai</h1>
+      </div>
+    </div>
+    <!- -------- about ------- ->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" alt="user-img">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hi, I am Mohan. I completed my school studies at Buvana Krishnan Matriculation Higher Secondary School. Additionally, I earned a degree in Computer Science from Anand Institute Of Higher Technology. Furthermore, I completed a Java full stack course at Pentagon-Space.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('eduction')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/Ux</span><br>Designing Web/App Interfaces</li>
+              </ul>
+              <ul>
+                <li><span>Web Development</span><br>Web app Development</li>
+              </ul>
+              <ul>
+                <li><span>Java Development</span><br>Building StandAlone/Enterprise Application</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>May 2023 - Jul 2023</span><br>Building BeatBox Application using Gui swing components</li>
+              </ul>
+              <ul>
+                <li><span>2022 - 2023</span><br>Java Full Stack Course at Pentagon-Space</li>
+              </ul>
+              <ul>
+                <li><span>Nov 2022 - Dec 2022</span><br>Building Clone Youtube using html,css,js</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="eduction">
+              <ul>
+                <li><span>2018 - 2022</span><br>B.E Computer Science at Anand Institute Of Higher Technology</li>
+              </ul>
+              <ul>
+                <li><span>2017 - 2018</span><br>XII - at Buvana Krishnan Matriculation Higher Secondary school</li>
+              </ul>
+              <ul>
+                <li><span>2015 - 2016</span><br>X - at Buvana Krishnan Matriculation Higher Secondary school</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!- -------- services ------- ->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Design and create a website that is more interactive and responsive, ensuring compatibility with all devices.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Create wireframes to outline the structure and layout of digital interfaces, focusing on usability and navigation.
+            Design visually appealing interfaces, considering factors like color theory, typography, and iconography to create a cohesive and aesthetically pleasing design.  
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java Developer</h2>
+            <p>Write clean, efficient, and maintainable Java code to implement software solutions based on project requirements.Analyze problems and develop algorithms to solve them efficiently using Java programming techniques.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!- -------- Portfolio ------- ->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div id="work-list">
+          <div class="work">
+            <img src="./Images/work1.png" alt="work1-img">
+            <div class="layer">
+              <h3>Clone Youtube</h3>
+              <p>This website is for entertainment and educational purpose</p>
+              <a href="https://github.com/MohanS0305/Youtube" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work2.png" alt="work2-img">
+            <div class="layer">
+              <h3>Music Application</h3>
+              <p>This app is for entertainment purpose it will produce multiple sound like BeatBox</p>
+              <a href="https://github.com/MohanS0305/Java-Projects/tree/master/GUI%20Cyber%20BeatBox/src/com/Gui/CyberBeatBox/Version2" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work3.png" alt="work3-img">
+            <div class="layer">
+              <h3>Student Management</h3>
+              <p>This app is used for insert,update,delete,display the student data.</p>
+              <a href="https://github.com/MohanS0305/Java-Projects/tree/master/Student_Management/src/com/studentManagement/jdbc" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!- -------- contact ------- ->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>smohan0305@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+91 98841-63825</p>
+            <div class="social-icons">
+              <a href="https://github.com/MohanS0305" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/smohan03/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="Images/my_cv.pdf"
+            download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <input type="submit" class="btn btn2" value="submit">
+            </form>
+
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169; Mohan.</p>
+      </div>
+    </div>
+
+    <script>
+
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabName) {
+        for(tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-40%";
+      }
+
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxrnBxyC4DVYHaymtnGnaXm5ZS0XancVxyBvTUK4z0bnLy4y17YBrvp6rKK-EeiEIcQPg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function() {
+          msg.innerHTML = '';
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
